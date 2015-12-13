@@ -77,7 +77,14 @@ button {
 .cn-home__header.fix-header {
     position: fixed;
     top: -60px;
-    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4)
+    box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4);
+    height: 145px;
+    transition: all 0.25s;
+}
+
+.fix-header .cn-home__header__nav {
+    margin-top: 50px;
+    transition: all 0.25s;
 }
 
 .cn-coronation-section {
