@@ -9,9 +9,11 @@
     
     <link rel="stylesheet" href="stylesheet/stylesheet.css">
     <link rel="stylesheet" href="stylesheet/responsive.css">
+    <link rel="stylesheet" href="stylesheet/image-viewer.css">
     
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
-    <script type="text/javascript" src="script/fixed-header.js"></script>
+    <script type="text/javascript" src="script/custom.js"></script>
+    <script type="text/javascript" src="script/image-viewer.js"></script>
 </head>
 
 <body>
@@ -46,12 +48,12 @@
             <div class="cn-layout-container">
 
                 <nav class="cn-home__header__nav">
-                    <a href="#coronation" id="coronation_head" class="cn-home__header__nav__link active">CORONATION 2016</a>
-                    <a href="#registeration" id="registeration_head" class="cn-home__header__nav__link">REGISTRATION</a>
-                    <a href="#program" id="program_head" class="cn-home__header__nav__link">PROGRAM</a>
-                    <a href="#committee" id="committee_head" class="cn-home__header__nav__link">COMMITTEE</a>
-                    <a href="#sponsors" id="sponsors_head" class="cn-home__header__nav__link">SPONSORS</a>
-                    <a href="#contact" id="contact_head" class="cn-home__header__nav__link">CONTACT</a>
+                    <a href="#coronation" class="cn-home__header__nav__link active">CORONATION 2016</a>
+                    <a href="#registeration" class="cn-home__header__nav__link">REGISTRATION</a>
+                    <a href="#program" class="cn-home__header__nav__link">PROGRAM</a>
+<!--                    <a href="#committee" class="cn-home__header__nav__link">COMMITTEE</a>-->
+                    <a href="#sponsors" class="cn-home__header__nav__link">SPONSORS</a>
+                    <a href="#contact" class="cn-home__header__nav__link">CONTACT</a>
                 </nav>
                 
             </div>
@@ -63,6 +65,9 @@
     <main class="cn-section__wrapper">
 
         <section class="cn-coronation-section">
+            
+            <div class="cn-coronation-section__background-left"></div>
+            <div class="cn-coronation-section__background-bottom"></div>
           
             <div class="cn-layout-container">
 
@@ -81,10 +86,52 @@
         </section>
         
         <section class="cn-registration-section" id="registeration">
+          
+            <div class="cn-layout-container">
+                
+                <h3 class="cn-section-title white-text">REGISTRATION</h3>
+                
+            </div>
+            
+            <section class="cn-images-section">
+            
+                <div class="cn-layout-container">
+
+                    <div class="cn-images__wrapper media">
+
+                        <div class="cn-image-thumbnail thumbnail">
+                            <img src="images/Fortune-1.jpg" alt="">
+                        </div>
+                        <div class="cn-image-thumbnail thumbnail">
+                            <img src="images/Fortune-2.jpg" alt="">
+                        </div>
+                        <div class="cn-image-thumbnail thumbnail">
+                            <img src="images/Fortune.jpg" alt="">
+                        </div>
+                        <div class="cn-image-thumbnail thumbnail">
+                            <img src="images/Mariott-3.jpg" alt="">
+                        </div>
+                        <div class="cn-image-thumbnail thumbnail">
+                            <img src="images/Mariott.jpg" alt="">
+                        </div>
+                        <div class="cn-image-thumbnail thumbnail">
+                            <img src="images/Fortune-2.jpg" alt="">
+                        </div>
+
+                    </div>
+
+                </div>
+                
+                <div class="thumb-viewer">
+                    <a class="prev"></a>
+                    <a class="next"></a>
+                    <a class="close">x</a>
+                    <div class="viewer-body"></div>
+                </div>
+
+            </section>
            
             <div class="cn-layout-container">
-            
-                <h3 class="cn-section-title white-text">REGISTRATION</h3>
             
                 <div class="cn-registration-section__table__wrapper">
 
@@ -198,37 +245,6 @@
             
         </section>
         
-        <section class="cn-images-section">
-            
-            <div class="cn-layout-container">
-                
-                <div class="cn-images__wrapper">
-                    
-                    <div class="cn-image-thumbnail">
-                        <img src="images/Fortune-1.jpg" alt="">
-                    </div>
-                    <div class="cn-image-thumbnail">
-                        <img src="images/Fortune-2.jpg" alt="">
-                    </div>
-                    <div class="cn-image-thumbnail">
-                        <img src="images/Fortune.jpg" alt="">
-                    </div>
-                    <div class="cn-image-thumbnail">
-                        <img src="images/Mariott-3.jpg" alt="">
-                    </div>
-                    <div class="cn-image-thumbnail">
-                        <img src="images/Mariott.jpg" alt="">
-                    </div>
-                    <div class="cn-image-thumbnail">
-                        <img src="images/Fortune-2.jpg" alt="">
-                    </div>
-                    
-                </div>
-                
-            </div>
-            
-        </section>
-        
         <section class="cn-program-section" id="program">
             
             <div class="cn-layout-container">
@@ -243,13 +259,88 @@
                     </li>
                     
                     <li class="cn-program__list__item">
-                        <h3 class="cn-program__list__item__title">CONTEST</h3>
+                        <h3 class="cn-program__list__item__title">SPEAKERS</h3>
                         <p class="cn-program__list__item__desc">— COMMING SOON!</p>
                     </li>
                     
                     <li class="cn-program__list__item">
-                        <h3 class="cn-program__list__item__title">CONTEST</h3>
-                        <p class="cn-program__list__item__desc">— COMMING SOON!</p>
+                       
+                        <h3 class="cn-program__list__item__title">AGENDA</h3>
+                        
+                        <table class="cn-program__table">
+                            <tr>
+                                <th colspan="2">Day 1: Friday, May 20, 2016</th>
+                            </tr>
+                            <tr>
+                                <th>Tentative Time</th>
+                                <th>Event</th>
+                            </tr>
+                            <tr>
+                                <td>1:00 PM</td>
+                                <td>District Executive Council Meeting</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>District Council Meeting &amp; Elections</td>
+                            </tr>
+                            <tr>
+                                <td>6:00 PM</td>
+                                <td>Opening Ceremony followed by Dinner</td>
+                            </tr>
+                        </table>
+                        
+                        <table class="cn-program__table">
+                            <tr>
+                                <th colspan="2">Day 2: Saturday, May 21, 2016</th>
+                            </tr>
+                            <tr>
+                                <th>Tentative Time</th>
+                                <th>Event</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Table Topics Contest</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Education Sessions</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Fun Nite</td>
+                            </tr>
+                        </table>
+                        
+                        <table class="cn-program__table">
+                            <tr>
+                                <th colspan="2">Day 3: Sunday, May 22, 2016</th>
+                            </tr>
+                            <tr>
+                                <th>Tentative Time</th>
+                                <th>Event</th>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>International Speech Contest</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Education Sessions</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Installation of New District Officers</td>
+                            </tr>
+                            <tr>
+                                <td></td>
+                                <td>Announcement of Winners</td>
+                            </tr>
+                            <tr>
+                                <td>5:00 PM</td>
+                                <td>Close of Coronation 2016</td>
+                            </tr>
+                        </table>
+                        
                     </li>
                     
                 </ul>
@@ -265,18 +356,26 @@
                 <h3 class="cn-section-title medium-width">SPONSORS</h3>
 
                 <ul class="cn-sponsors__list clearfix">
-                    <li class="cn-sponsors__list__item"></li>
-                    <li class="cn-sponsors__list__item"></li>
-                    <li class="cn-sponsors__list__item"></li>
+                    <li class="cn-sponsors__list__item">
+                        <img src="images/logos/arowana.png" alt="arowana_logo">
+                    </li>
+                    <li class="cn-sponsors__list__item">
+                        <img src="images/logos/logo.png" alt="coronation_logo">
+                    </li>
+                    <li class="cn-sponsors__list__item">
+                        <img src="images/logos/sarayu.png" alt="sarayu_logo">
+                    </li>
                 </ul>
                 
             </div>
             
         </section>
         
-        <footer class="cn-footer">
+        <footer class="cn-footer" id="contact">
            
             <div class="cn-layout-container">
+              
+                <h3 class="cn-section-title medium-width white-text">CONTACT</h3>
                
                 <p class="cn-footer__text">For any queries, please contact <a href="mailteamcoronation2016@gmail.com" class="cn-footer__text__link">teamcoronation2016@gmail.com</a></p>
             </div>

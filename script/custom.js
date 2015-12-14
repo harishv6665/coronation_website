@@ -11,18 +11,20 @@ $(document).ready(function(){
         $(".cn-home__header").toggleClass("expand");
     });
     
+//    $('a.cn-home__header__nav__link[href^="#"]').click(function() {
+//        $('html,body').animate({ scrollTop: $(this.hash).offset().top-50}, 700);
+//        return false;
+//        e.preventDefault();
+//    });
+    
     $(document).on("scroll", onScroll);
     
     //smoothscroll
-    $('a.cn-home__header__nav__link[href^="#"]').on('click', function (e) {
-        
+    $('.cn-home__header__nav__link[href^="#"]').on('click', function (e) {
         e.preventDefault();
-        
-        var headerHeight = $(".cn-home__header").height();
-        
         $(document).off("scroll");
         
-        $('a.cn-home__header__nav__link').each(function () {
+        $('.cn-home__header__nav__link').each(function () {
             $(this).removeClass('active');
         })
         $(this).addClass('active');
@@ -31,7 +33,7 @@ $(document).ready(function(){
             menu = target;
         $target = $(target);
         $('html, body').stop().animate({
-            'scrollTop': $target.offset().top-headerHeight+75
+            'scrollTop': $target.offset().top-60
         }, 500, 'swing', function () {
             window.location.hash = target;
             $(document).on("scroll", onScroll);
@@ -41,26 +43,16 @@ $(document).ready(function(){
 });
 
 function onScroll(event){
-    
-    $('a.cn-home__header__nav__link').removeClass("active");
-    
     var scrollPos = $(document).scrollTop();
-    
-    var headerHeight = $(".cn-home__header").height()-75;
-    
-    console.log($("#registeration")[0].getBoundingClientRect().top <= headerHeight);
-    
-    if($("#sponsors")[0].getBoundingClientRect().top <= headerHeight){
-        $("#sponsors_head").addClass("active");
-    }
-    else if($("#program")[0].getBoundingClientRect().top <= headerHeight){
-        $("#program_head").addClass("active");
-    }
-    else if($("#registeration")[0].getBoundingClientRect().top <= headerHeight){
-         $("#registeration_head").addClass("active");
-    }
-    else{
-        $("#coronation_head").addClass("active");
-    }
-    
+    $('.cn-home__header__nav__link').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos-150) {
+            $('.cn-home__header__nav__link').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
 }

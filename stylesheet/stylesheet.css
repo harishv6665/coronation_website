@@ -53,7 +53,7 @@ button {
     top: 260px;
     right: 0;
     bottom: 165px;
-    background: #f18e8e;
+    background: rgba(241, 142, 142, 0);
     margin: auto;
     z-index: 10;
 }
@@ -90,8 +90,9 @@ button {
 .cn-coronation-section {
     width: 100%;
     background: #fff;
-    padding-top: 80px;
+    padding-top: 70px;
     height: 800px;
+    position: relative;
 }
 
 .cn-layout-container {
@@ -202,6 +203,26 @@ button {
     line-height: 28px;
     margin-top: 60px;
     width: 900px;
+}
+
+.cn-coronation-section__background-left {
+    position: absolute;
+    width: 200px;
+    right: 0;
+    top: -60px;
+    bottom: 0;
+    background: url(../images/shapes/yellow.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.cn-coronation-section__background-bottom {
+    position: absolute;
+    height: 200px;
+    right: 0;
+    left: 0px;
+    bottom: 0;
+    background: url(../images/shapes/blue.png) no-repeat;
+    background-size: 100% 100%;
 }
 
 .cn-registration-section {
@@ -389,7 +410,7 @@ table.cn-registration-section__secondary-table tr:first-child td:first-child {
 }
 
 .cn-image-thumbnail {
-    margin: 40px 1px;
+    margin: 30px 1px;
 }
 
 .cn-image-thumbnail img {
@@ -399,6 +420,8 @@ table.cn-registration-section__secondary-table tr:first-child td:first-child {
 
 .cn-images-section {
     background: #fadd3c;
+    margin-bottom: 40px;
+    margin-top: 40px;
 }
 
 ul.cn-program__list {
@@ -441,6 +464,26 @@ li.cn-program__list__item.active {
     padding: 30px 25px;
 }
 
+table.cn-program__table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+table.cn-program__table tr:first-child th {
+    background: #F8485E;
+    color: #fff;
+}
+table.cn-program__table td, 
+table.cn-program__table th {
+    border: 1px solid #F8485E;
+    padding: 5px 10px;
+}
+
+table.cn-program__table td:first-child {
+    width: 150px;
+}
+
 h3.cn-section-title.red-border.medium-width:after {
     background: #F8485E;
 }
@@ -450,7 +493,7 @@ h3.cn-section-title.medium-width:after {
 }
 
 section.cn-program-section {
-    padding-top: 80px;
+    padding-top: 70px;
     border-bottom: 10px solid #323B57;
     padding-bottom: 70px;
 }
@@ -465,16 +508,16 @@ ul.cn-sponsors__list {
 }
 
 li.cn-sponsors__list__item {
-    width: 190px;
-    background: #ccc;
-    height: 190px;
+    width: 160px;
+    /* background: #ccc; */
+    height: 160px;
     float: left;
-    margin: 5px;
+    /* margin: 5px 20px; */
 }
 
 footer.cn-footer {
-    height: 70px;
     background: #323B57;
+    padding: 70px 0 50px 0;
 }
 
 p.cn-footer__text {
@@ -491,3 +534,4 @@ a.cn-footer__text__link {
 li.cn-sponsors__list__item:first-child {
     margin-left: 0;
 }
+li.cn-sponsors__list__item img {width: 60%;margin-top: 50%;transform: translateY(-50%);}
