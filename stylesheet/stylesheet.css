@@ -87,6 +87,10 @@ button {
     transition: all 0.25s;
 }
 
+.cn-home__mobile-header-title {
+    display: none;
+}
+
 .cn-coronation-section {
     width: 100%;
     background: #fff;
@@ -390,7 +394,7 @@ table.cn-registration-section__secondary-table td {
     border-bottom: 1px solid #dedede;
 }
 
-button.cn-registration-section__secondary-table__button {
+.cn-registration-section__secondary-table__button {
     background: #fa455a;
     border: none;
     padding: 7px 23px;
