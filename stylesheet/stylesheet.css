@@ -243,6 +243,20 @@ button {
     padding: 10px 50px;
 }
 
+.cn-registration-section__mobile-booking-button {
+    height: 42px;
+    border-radius: 2px;
+    background: none;
+    border: 2px solid #F8485E;
+    font-size: 14px;
+    font-weight: 600;
+    color: #F8485E;
+    width: 230px;
+    margin: auto;
+    padding: 9px;
+    text-align: center;
+}
+
 /*
 .cn-registration-section__primary-table {
     width: 100%;

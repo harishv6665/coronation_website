@@ -179,6 +179,14 @@
         display: block;
     }
     
+    .cn-registration-section__table__wrapper {
+        display: none;
+    }
+    
+    .cn-registration-section__mobile-booking-button {
+        display: block;
+    }
+    
     .fix-header-responsive header.cn-home__header {
         height: 85px;
     }
