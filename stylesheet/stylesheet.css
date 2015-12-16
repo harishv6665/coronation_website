@@ -243,6 +243,7 @@ button {
 }
 
 .cn-registration-section__mobile-booking-button {
+    display: none;
     height: 42px;
     border-radius: 2px;
     background: none;
