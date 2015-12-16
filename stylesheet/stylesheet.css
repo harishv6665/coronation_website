@@ -47,12 +47,11 @@ button {
 }
 
 .cn-home__video__container {
-    width: 43%;
+    width: 45%;
     position: absolute;
     left: 0;
-    top: 260px;
     right: 0;
-    bottom: 165px;
+    bottom: 140px;
     background: rgba(241, 142, 142, 0);
     margin: auto;
     z-index: 10;
