@@ -78,11 +78,13 @@ button {
     top: -60px;
     box-shadow: 0 0 15px 0px rgba(0, 0, 0, 0.4);
     height: 145px;
+    -webkit-transition: all 0.25s;
     transition: all 0.25s;
 }
 
 .fix-header .cn-home__header__nav {
     margin-top: 50px;
+    -webkit-transition: all 0.25s;
     transition: all 0.25s;
 }
 
@@ -115,7 +117,13 @@ button {
 }
 
 .cn-home__header__nav {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 100px;
     margin-top: 80px;
@@ -272,7 +280,7 @@ button {
     color: #363636;
 }
 
-.cn-registration-section__primary-table th, 
+.cn-registration-section__primary-table th,
 .cn-registration-section__primary-table td {
     padding-left: 30px;
     vertical-align: middle;
@@ -424,6 +432,9 @@ table.cn-registration-section__secondary-table tr:first-child td:first-child {
 }*/
 
 .cn-images__wrapper {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
     display: flex;
 }
 
@@ -492,14 +503,14 @@ table.cn-program__table tr:first-child th {
     background: #F8485E;
     color: #fff;
 }
-table.cn-program__table td, 
+table.cn-program__table td,
 table.cn-program__table th {
     border: 1px solid #F8485E;
     padding: 5px 10px;
 }
 
 table.cn-program__table td:first-child {
-    width: 150px;
+    width: 190px;
 }
 
 h3.cn-section-title.red-border.medium-width:after {
@@ -522,6 +533,9 @@ section.cn-sponsors-section {
 
 ul.cn-sponsors__list {
     list-style-type: none;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -554,4 +568,4 @@ a.cn-footer__text__link {
 li.cn-sponsors__list__item:first-child {
     margin-left: 0;
 }
-li.cn-sponsors__list__item img {width: 60%;margin-top: 50%;transform: translateY(-50%);}
+li.cn-sponsors__list__item img {width: 60%;margin-top: 50%;-webkit-transform: translateY(-50%);transform: translateY(-50%);}
